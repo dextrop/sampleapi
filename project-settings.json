@@ -1,0 +1,31 @@
+{
+  "project_location": "/Users/saurabhpandey/Desktop/sampleproject",
+  "project_name": "samplebackend",
+  "project_settings": {
+    "tables": [
+      {
+          "table_name": "Users",
+          "columns": [
+              {"column_name": "email", "column_type": "email"},
+              {"column_name": "password", "column_type": "password"},
+              {"column_name": "name", "column_type": "varchar"},
+              {"column_name": "type", "column_type": "int"}
+          ]
+      }
+    ],
+    "apis": [
+      {
+          "api_endpoint": "v1/login/",
+          "api_type": "login-api",
+          "api_table": "Users",
+          "api_name": "ClientLogin"
+      },
+      {
+          "api_endpoint": "v1/signup/",
+          "api_type": "signup-api",
+          "api_table": "Users",
+          "api_name": "ClientSignup"
+      }
+    ]
+  }
+}
